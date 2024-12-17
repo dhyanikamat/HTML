@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+  </head>
+
+  <body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="" method="post">
+
+      <fieldset>
+        <legend>Basic Information</legend>
+
+        <label for="first name">First Name</label><br>
+        <input type="text" id="firstName" name="firstlName" placeholder="dk"><br><br>
+
+        <label for="Last name">Last Name</label><br>
+        <input type="text" id="lasttName" name="lastlName" placeholder="kamat"><br><br>
+
+        <label for="studentNumber">Student Number</label><br>
+        <input type="text" id="studentNumber" name="studentNumber" placeholder="e.g. 11183021"><br><br>
+
+        <label for="yearLevel">Year Level</label><br>
+        <select id="yearLevel" name="yearLevel">
+          <option value="">Please Select</option>
+          <option value="Incoming A.Y. '12-'13">Incoming A.Y. '12-'13</option>
+          <!-- Add more options here -->
+        </select><br><br>
+
+        <label for="degreeProgram">Degree Program</label><br>
+        <select id="degreeProgram" name="degreeProgram">
+          <option value="">Please Select</option>
+          <!-- Add degree options here -->
+          <option>B.tech</option>
+        </select><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g. myname@example.com"><br><br>
+
+        <label for="phoneNumber">Phone Number</label><br>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(000) 000-0000"><br><br>
+
+        <label for="networkProvider">Network Provider</label><br>
+        <select id="networkProvider" name="networkProvider">
+          <option value="">Please Select</option>
+          <!-- Add network providers options here -->
+        </select><br><br>
+
+        <label for="birthDate">Birth Date</label><br>
+        <select id="month" name="month">
+          <option value="">Please select a month</option>
+          <!-- Add month options -->
+        </select>
+        <select id="day" name="day">
+          <option value="">Please select a day</option>
+          <!-- Add day options -->
+        </select>
+        <select id="year" name="year">
+          <option value="">Please select a year</option>
+          <!-- Add year options -->
+        </select><br><br>
+
+        <label for="presentAddress">Present Address</label><br>
+        <input type="text" id="presentAddress" name="presentAddress" placeholder="Street Address"><br><br>
+        <input type="text" id="presentAddressLine2" name="presentAddressLine2"
+          placeholder="Street Address Line 2"><br><br>
+        <input type="text" id="city" name="city" placeholder="City"><br><br>
+        <input type="text" id="state" name="state" placeholder="State/Province"><br><br>
+        <input type="text" id="postalCode" name="postalCode" placeholder="Postal/Zip Code"><br><br>
+
+        <label for="country">Country</label><br>
+        <input type="text" id="country" name="country" value="United States" readonly><br><br>
+
+        <label for="permanentAddress">Permanent Address</label><br>
+        <input type="text" id="permanentAddress" name="permanentAddress" placeholder="Street Address"><br><br>
+        <input type="text" id="permanentAddressLine2" name="permanentAddressLine2"
+          placeholder="Street Address Line 2"><br><br>
+        <input type="text" id="permanentCity" name="permanentCity" placeholder="City"><br><br>
+        <input type="text" id="permanentState" name="permanentState" placeholder="State/Province"><br><br>
+        <input type="text" id="permanentPostalCode" name="permanentPostalCode" placeholder="Postal/Zip Code"><br><br>
+
+        <label for="permanentCountry">Country</label><br>
+        <input type="text" id="permanentCountry" name="permanentCountry" value="United States" readonly><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Emergency Contact</legend>
+
+        <label for="emergencyContactFirstName">First Name</label><br>
+        <input type="text" id="emergencyContactFirstName" name="emergencyContactFirstName"><br><br>
+
+        <label for="emergencyContactLastName">Last Name</label><br>
+        <input type="text" id="emergencyContactLastName" name="emergencyContactLastName"><br><br>
+
+        <label for="relationship">Relationship</label><br>
+        <input type="text" id="relationship" name="relationship" placeholder="e.g. Father, Mother"><br><br>
+
+        <label for="emergencyContactAddress">Address</label><br>
+        <input type="text" id="emergencyContactAddress" name="emergencyContactAddress"
+          placeholder="Street Address"><br><br>
+        <input type="text" id="emergencyContactAddressLine2" name="emergencyContactAddressLine2"
+          placeholder="Street Address Line 2"><br><br>
+        <input type="text" id="emergencyContactCity" name="emergencyContactCity" placeholder="City"><br><br>
+        <input type="text" id="emergencyContactState" name="emergencyContactState" placeholder="State/Province"><br><br>
+        <input type="text" id="emergencyContactPostalCode" name="emergencyContactPostalCode"
+          placeholder="Postal/Zip Code"><br><br>
+
+        <label for="emergencyContactPhone">Phone Number</label><br>
+        <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" placeholder="(000) 000-0000"><br><br>
+
+        <label for="emergencyContactEmail">Email</label><br>
+        <input type="email" id="emergencyContactEmail" name="emergencyContactEmail"
+          placeholder="example@example.com"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Background</legend>
+
+        <label for="highSchoolName">High School Name</label><br>
+        <input type="text" id="highSchoolName" name="highSchoolName"><br><br>
+
+        <label for="cv">Curriculum Vitae or List of Achievements</label><br>
+        <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx"><br><br>
+
+        <label for="extracurricular">Other Extra Curricular Activities</label><br>
+        <input type="text" id="extracurricular" name="extracurricular"><br><br>
+
+        <label>Extra Curricular Participation</label><br>
+        <input type="checkbox" id="studentCouncil" name="extracurricularParticipation" value="Student Council">Student
+        Council
+        <input type="checkbox" id="classOfficer" name="extracurricularParticipation" value="Class Officer">Class Officer
+        <input type="checkbox" id="club" name="extracurricularParticipation" value="Club/Organization">Club/Organization
+        <input type="checkbox" id="varsityPlayer" name="extracurricularParticipation" value="Varsity Player">Varsity
+        Player
+        <input type="checkbox" id="others" name="extracurricularParticipation" value="Others">Others<br><br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Details</legend>
+
+        <label>Resources Available</label><br>
+        <input type="checkbox" name="resourcesAvailable" value="Car/Transportation">Car/Transportation
+        <input type="checkbox" name="resourcesAvailable" value="Event Venue/House">Event Venue/House
+        <input type="checkbox" name="resourcesAvailable" value="Printer">Printer
+        <input type="checkbox" name="resourcesAvailable" value="LCD Projector">LCD Projector
+        <input type="checkbox" name="resourcesAvailable" value="Laptop">Laptop<br><br>
+
+        <label for="skills">Skills/Talents</label><br>
+        <input type="text" id="skills" name="skills" placeholder="Acting, Arts/Crafts, etc."><br><br>
+
+        <label for="sports">Sports</label><br>
+        <input type="text" id="sports" name="sports" placeholder="Badminton, Basketball, etc."><br><br>
+
+        <label for="interests">Interests</label><br>
+        <input type="text" id="interests" name="interests"><br><br>
+
+        <label for="familyIncome">Estimate Your Family Monthly Income</label><br>
+        <select id="familyIncome" name="familyIncome">
+          <option value="">Please Select</option>
+          <!-- Add income range options here -->
+        </select><br><br>
+
+        <label for="scholarship">Do You Have Any Scholarship?</label><br>
+        <input type="radio" name="scholarship" value="Yes"> Yes
+        <input type="radio" name="scholarship" value="No"> No<br><br>
+
+        <label for="sponsor">Who/What is the name of your sponsor?</label><br>
+        <input type="text" id="sponsor" name="sponsor"><br><br>
+
+        <label for="shiftCourse">Do You Plan To Shift To Another Course?</label><br>
+        <input type="radio" name="shiftCourse" value="Yes"> Yes
+        <input type="radio" name="shiftCourse" value="No"> No<br><br>
+
+        <label for="newCourse">To What Course?</label><br>
+        <input type="text" id="newCourse" name="newCourse"><br><br>
+
+        <label for="firstChoiceCourse">What Course Is Your First Choice In The University?</label><br>
+        <input type="text" id="firstChoiceCourse" name="firstChoiceCourse"><br><br>
+
+        <label for="postCollegePlan">What Is Your Plan After College?</label><br>
+        <select id="postCollegePlan" name="postCollegePlan">
+          <option value="">Please Select</option>
+          <!-- Add plan options -->
+        </select><br><br>
+
+        <label for="suggestions">Suggestions / Comments</label><br>
+        <textarea id="suggestions" name="suggestions"></textarea><br><br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Verification</legend>
+
+        <label for="captcha">Please verify that you are human</label><br>
+        <input type="text" id="captcha" name="captcha"><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+
+</html>
